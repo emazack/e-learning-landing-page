@@ -1,5 +1,93 @@
+// Colors
+$primary: #666CA3;
+$secondary: #13183F;
+$tertiary: #F74780;
+
+$gradient-1: #FF6F48 - #F02AA6;
+$gradient-2: #4851FF - #F02AA6;
+
+$grey: #83869A;
+$pink: #F02AA6;
+$white: #FFFFFF;
+
+// Typography
+@mixin heading-xl {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 71px;
+    color: $secondary;
+}
+
+@mixin heading-l {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: $secondary;
+}
+
+@mixin heading-m {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: $secondary;
+}
+
+@mixin heading-s {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: $secondary;
+}
+
+@mixin paragraph {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color:$grey;
+}
+
+@mixin description {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color:$grey;
+}
+
+// Elements
+
+@mixin button($bg-color) {
+    .cta-button {
+        height: 56px;
+        width: 167px;
+        border-radius: 28px;
+        background-color: $bg-color;
+        
+        span.text{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: $white;
+        }
+    }
+}
+
+@mixin wrapping {
+    padding: 0 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+
