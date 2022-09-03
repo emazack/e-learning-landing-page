@@ -3,8 +3,8 @@ $primary: #666CA3;
 $secondary: #13183F;
 $tertiary: #F74780;
 
-$gradient-1: #FF6F48 - #F02AA6;
-$gradient-2: #4851FF - #F02AA6;
+$gradient-1: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+$gradient-2: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
 
 $grey: #83869A;
 $pink: #F02AA6;
@@ -61,12 +61,22 @@ $white: #FFFFFF;
 
 // Elements
 
-@mixin button($bg-color) {
+@mixin button($bg-color, $hover-bg-color) {
     .cta-button {
         height: 56px;
         width: 167px;
         border-radius: 28px;
-        background-color: $bg-color;
+        background: $bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &:hover {
+            background: $hover-bg-color;
+            -webkit-transition: background 0.2s ease-in-out;
+            -ms-transition: background 0.2s ease-in-out;
+            transition: background 0.2s ease-in-out;
+        }
         
         span.text{
             font-style: normal;
@@ -80,8 +90,12 @@ $white: #FFFFFF;
 }
 
 @mixin wrapping {
-    padding: 0 20px;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
 }
+
+// General
 
 * {
     margin: 0;
@@ -89,5 +103,75 @@ $white: #FFFFFF;
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+a{
+    text-decoration: none;
+}
+
+
+.header{
+    position: relative;
+    
+    .navbar{
+        @include wrapping; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .logo-dark{
+            width: 111.17px;
+            height: 27.68px;
+        }
+        
+        @include button($secondary, $primary)
+    }
+    
+    .hero {
+        @include wrapping;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        min-height: 712px;
+        
+        .text{
+            
+            h1 {
+                @include heading-xl;
+                margin-bottom: 29px;
+            }
+            
+            p {
+                @include paragraph;
+                margin-bottom: 40px;
+            }
+            
+            @include button($gradient-1, $gradient-2) 
+        }
+        
+        .main-picture{
+            
+            img{
+                position: absolute;
+                top: -17%;
+                right: -5%;
+                z-index: -1;
+                
+                
+                @media (max-width: 1700px) {
+                    top: -17%;
+                    right: -21%;
+                }
+
+                @media (max-width: 1400px) {
+                    top: -17%;
+                    right: -33%;
+                }
+            }
+        }
+    }
+}
+
+
 
 
