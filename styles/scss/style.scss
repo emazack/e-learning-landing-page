@@ -108,9 +108,17 @@ a{
     text-decoration: none;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
+// Style
+
 
 .header{
     position: relative;
+    overflow: hidden;
     
     .navbar{
         @include wrapping; 
@@ -153,19 +161,33 @@ a{
             
             img{
                 position: absolute;
-                top: -17%;
-                right: -5%;
+                right: -4%;
+                top: -12%;
+                max-width: 991.63px;
                 z-index: -1;
-                
-                
-                @media (max-width: 1700px) {
+
+                @media (max-width: 1536px) {
                     top: -17%;
                     right: -21%;
                 }
 
-                @media (max-width: 1400px) {
+                @media (max-width: 1440px) {
                     top: -17%;
-                    right: -33%;
+                    right: -21%;
+                }
+
+                @media (max-width: 1362px) {
+                    top: -8%;
+                    right: -35%;
+                }
+
+                @media (max-width: 1024px) {
+                    top: -11%;
+                    right: -44%;
+                }
+
+                @media (max-width: 768px) {
+                    position: unset;
                 }
             }
         }
