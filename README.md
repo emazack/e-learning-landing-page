@@ -1,10 +1,9 @@
 # E-learning landing page
 
-This responsive page is perfect if you want to open up on Google for an online service project.
-Small-size landing page to share your brand. You will have a contact button that take to the page 
+This responsive page is perfect if you want to open up on Google for an online service project. Small-size landing page to share your brand. You will have a contact button that take to the page 
 you need.
 
-## Table of contents
+## Table of contents 
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
