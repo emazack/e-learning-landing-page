@@ -91,6 +91,7 @@ $white: #FFFFFF;
 
 @mixin wrapping {
     max-width: 1110px;
+    padding: 0 20px;
     width: 100%;
     margin: 0 auto;
 }
@@ -125,6 +126,7 @@ img{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 120px;
         
         .logo-dark{
             width: 111.17px;
@@ -141,8 +143,17 @@ img{
         justify-content: center;
         align-items: center;
         min-height: 712px;
+
+        @media (max-width: 1024px) {
+            min-height: 638px;
+        }
+
+        @media (max-width: 768px) {
+            min-height: unset;
+            display: block;
+        }
         
-        .text{
+        .hero-text{
             
             h1 {
                 @include heading-xl;
@@ -154,7 +165,11 @@ img{
                 margin-bottom: 40px;
             }
             
-            @include button($gradient-1, $gradient-2) 
+            @include button($gradient-1, $gradient-2);
+            
+            @media (max-width: 768px) {
+                margin-bottom: 46px;
+            }
         }
         
         .main-picture{
@@ -182,11 +197,12 @@ img{
                 }
 
                 @media (max-width: 1024px) {
-                    top: -11%;
-                    right: -44%;
+                    max-width: 640px;
+                    top: 6%;
+                    right: -27%;
                 }
 
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     position: unset;
                 }
             }
