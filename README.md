@@ -9,9 +9,9 @@ you need.
 
 ### Built with
 
-CSS
-HTML
-figma
+- SCSS
+- HTML
+- figma
 
 ## Author
 
