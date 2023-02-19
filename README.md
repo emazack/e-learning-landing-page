@@ -3,29 +3,8 @@
 This responsive page is perfect if you want to open up on Google for an online service project. Small-size landing page to share your brand. You will have a contact button that take to the page 
 you need.
 
-## Table of contents 
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-- [License](#license)
-
-## Overview
-
-(...)
-
-### Screenshot
-
-![Sample screenshot](/...)
-
 ### Links
 
-- Solution URL: [Github repo](...)
 - Live Site URL: [Live website](https://emazack.github.io/e-learning-landing-page/)
 
 ## My process
@@ -34,15 +13,9 @@ you need.
 
 ### Built with
 
-...
-
-### What I learned
-
-...
-
-### Continued development
-
-...
+CSS
+HTML
+figma
 
 ## Author
 
