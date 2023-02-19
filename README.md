@@ -7,10 +7,6 @@ you need.
 
 - Live Site URL: [Live website](https://emazack.github.io/e-learning-landing-page/)
 
-## My process
-
-(...)
-
 ### Built with
 
 CSS
